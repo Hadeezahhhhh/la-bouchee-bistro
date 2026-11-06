@@ -73,4 +73,25 @@ background-color: #38251d;
 color: white;
 padding: 25px;
 font-size: 13px;
-} 
+} /* FOOD PICTURE STYLING */
+
+.menu-card {
+    overflow: hidden;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* MOBILE PICTURE SIZE */
+
+@media (max-width: 480px) {
+    .menu-card img {
+        height: 220px;
+    }
+}

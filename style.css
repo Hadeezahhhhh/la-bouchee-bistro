@@ -347,4 +347,25 @@ font-size: 13px;
     display: block;
     margin-top: 15px;
     color: #806b5c;
+}.payment-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.payment-option {
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    margin: 0 0 15px;
+}
+
+.payment-option label {
+    margin-right: auto;
+}
+
+.bank-details {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
 }

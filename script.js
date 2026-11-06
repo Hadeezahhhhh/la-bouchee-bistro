@@ -49,4 +49,17 @@ function changeQuantity(index, amount) {
     }
 
     updateCart();
-}
+}document.querySelectorAll(".menu-card").forEach(card => {
+    const name = card.querySelector("h3").textContent;
+    const priceText = card.querySelector(".price").textContent;
+    const price = Number(priceText.replace(/[^\d]/g, ""));
+
+    const button = document.createElement("button");
+    button.textContent = "Add to Cart 🛒";
+
+    button.onclick = function () {
+        addToCart(name, price);
+    };
+
+    card.appendChild(button);
+});

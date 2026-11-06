@@ -74,4 +74,41 @@ orderType.addEventListener("change", function () {
         deliveryAddress.required = false;
         deliveryAddress.value = "";
     }
+});const checkoutForm = document.getElementById("checkout-form");
+
+checkoutForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (cart.length === 0) {
+        alert("Your cart is empty. Please add items first!");
+        return;
+    }
+
+    const name = document.getElementById("customer-name").value;
+    const phone = document.getElementById("customer-phone").value;
+    const orderType = document.getElementById("order-type").value;
+    const address = document.getElementById("delivery-address").value;
+
+    if (orderType === "Delivery" && !address.trim()) {
+        alert("Please enter your delivery address.");
+        return;
+    }
+
+    let summary = `Thank you, ${name}!\n\nYour order:\n`;
+
+    cart.forEach(item => {
+        summary += `${item.name} x ${item.quantity} = ₦${(item.price * item.quantity).toLocaleString()}\n`;
+    });
+
+    summary += `\nTotal: ${document.getElementById("cart-total").textContent}`;
+    summary += `\nOrder type: ${orderType}`;
+
+    if (orderType === "Delivery") {
+        summary += `\nAddress: ${address}`;
+    }
+
+    summary += `\nPhone: ${phone}`;
+    summary += "\n\nPayment setup is coming soon.";
+
+    alert(summary);
 });

@@ -190,6 +190,29 @@
 
     <h3>Total: <span id="cart-total">₦0</span></h3>
 </section>
+<section id="checkout">
+    <h2>Checkout</h2>
+
+    <form id="checkout-form">
+        <label>Full Name</label>
+        <input type="text" id="customer-name" placeholder="Enter your name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="customer-phone" placeholder="Enter phone number" required>
+
+        <label>Order Type</label>
+        <select id="order-type" required>
+            <option value="">Choose an option</option>
+            <option value="Pickup">Pickup</option>
+            <option value="Delivery">Delivery</option>
+        </select>
+
+        <label>Delivery Address</label>
+        <textarea id="delivery-address" placeholder="Enter delivery address"></textarea>
+
+        <button type="submit">Continue to Payment</button>
+    </form>
+</section>
 <script src="script.js"></script>
 </body>
 </html>

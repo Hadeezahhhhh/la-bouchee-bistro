@@ -368,4 +368,37 @@ font-size: 13px;
     width: 100%;
     box-sizing: border-box;
     margin: 0;
+}.payment-section {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.payment-section .payment-option {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 12px 0;
+    padding: 15px;
+}
+
+.payment-section .payment-option label {
+    flex: 1;
+    margin: 0;
+}
+
+.payment-section .payment-option span {
+    margin-left: auto;
+}
+
+.payment-section .bank-details {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 15px 0 0;
 }

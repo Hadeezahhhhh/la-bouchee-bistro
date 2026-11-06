@@ -62,4 +62,16 @@ function changeQuantity(index, amount) {
     };
 
     card.appendChild(button);
+});const orderType = document.getElementById("order-type");
+const deliveryAddress = document.getElementById("delivery-address");
+
+orderType.addEventListener("change", function () {
+    if (orderType.value === "Delivery") {
+        deliveryAddress.style.display = "block";
+        deliveryAddress.required = true;
+    } else {
+        deliveryAddress.style.display = "none";
+        deliveryAddress.required = false;
+        deliveryAddress.value = "";
+    }
 });

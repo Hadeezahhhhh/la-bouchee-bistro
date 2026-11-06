@@ -401,4 +401,21 @@ font-size: 13px;
     max-width: 100%;
     box-sizing: border-box;
     margin: 15px 0 0;
+}#checkout form .payment-section {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 25px 0 !important;
+    box-sizing: border-box !important;
+    grid-column: 1 / -1 !important;
+    align-self: stretch !important;
+}
+
+#checkout form .payment-option,
+#checkout form .bank-details {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
 }

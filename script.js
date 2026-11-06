@@ -108,7 +108,12 @@ checkoutForm.addEventListener("submit", function(event) {
     }
 
     summary += `\nPhone: ${phone}`;
-    summary += "\n\nPayment setup is coming soon.";
+    summary += "\n\nPAYMENT METHOD: Bank Transfer";
+summary += "\nBank: To be confirmed";
+summary += "\nAccount Name: To be confirmed";
+summary += "\nAccount Number: To be confirmed";
+summary += "\n\nPlease transfer the exact amount and await payment confirmation.";
+    
 
     alert(summary);
 });

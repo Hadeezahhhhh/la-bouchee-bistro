@@ -280,3 +280,71 @@ font-size: 13px;
 .bank-details h3 {
     margin-bottom: 12px;
 }
+.payment-section {
+    margin-top: 30px;
+    padding: 24px;
+    background: #fffaf4;
+    border: 1px solid #e8d9c8;
+    border-radius: 16px;
+    color: #3b2418;
+}
+
+.payment-section h2 {
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.payment-subtitle {
+    color: #8b7768;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid #b99a72;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.payment-option label {
+    font-weight: 600;
+}
+
+.payment-option span {
+    margin-left: auto;
+    color: #8a6b3f;
+    font-size: 12px;
+}
+
+.bank-details {
+    margin-top: 18px;
+    padding: 20px;
+    background: #f2e9df;
+    border-radius: 12px;
+}
+
+.bank-details h3 {
+    margin-bottom: 16px;
+}
+
+.bank-details p {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #dfd0c0;
+    font-size: 13px;
+}
+
+.bank-details strong {
+    text-align: right;
+}
+
+.bank-details small {
+    display: block;
+    margin-top: 15px;
+    color: #806b5c;
+}

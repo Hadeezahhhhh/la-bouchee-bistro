@@ -1,51 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<title>La Bouchée Bistro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>La Bouchée Bistro Nigeria</title>
 </head>
 
 <body>
 
-<header>
-<h1>LA BOUCHÉE</h1>
-<p>BISTRO NIGERIA</p>
-</header>
+    <header>
+        <h1>LA BOUCHÉE</h1>
+        <p>BISTRO NIGERIA</p>
+    </header>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#menu">Menu</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<main>
+    <main>
 
-<section id="home">
-<h2>Good Food. Good Mood.</h2>
-<p>Welcome to La Bouchée Bistro.</p>
-<p>Delicious moments, served fresh.</p>
-<button>Order Now</button>
-</section>
+        <section id="home">
+            <h2>Good Food. Good Mood.</h2>
+            <p>Welcome to La Bouchée Bistro.</p>
+            <p>Delicious moments, served fresh.</p>
 
-<section id="menu">
-<h2>Our Menu</h2>
-<p>Discover something delicious.</p>
-</section>
+            <button onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+                Explore Our Menu
+            </button>
+        </section>
 
-<section id="about">
-<h2>About La Bouchée</h2>
-<p>Good food, beautiful moments.</p>
-</section>
+        <section id="menu">
 
-</main>
+            <h2>Our Menu</h2>
+            <p>Discover something delicious.</p>
 
-<footer id="contact">
-<p>La Bouchée Bistro Nigeria</p>
-<p>Ilorin, Kwara State</p>
-</footer>
+            <h3>BURGERS</h3>
+
+            <div class="menu-items">
+
+                <div class="menu-card">
+                    <h3>Classic Beef Burger</h3>
+                    <p>Juicy beef patty served with fresh toppings.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Double Cheeseburger</h3>
+                    <p>Two juicy beef patties with melted cheese.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Chicken Burger</h3>
+                    <p>Crispy chicken with fresh vegetables.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Spicy Chicken Burger</h3>
+                    <p>Crunchy chicken with a spicy kick.</p>
+                </div>
+
+            </div>
+
+            <h3>LOADED FRIES</h3>
+
+            <div class="menu-items">
+
+                <div class="menu-card">
+                    <h3>Loaded Cheese Fries</h3>
+                    <p>Golden fries topped with melted cheese.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Chicken Loaded Fries</h3>
+                    <p>Crispy fries topped with seasoned chicken.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>BBQ Loaded Fries</h3>
+                    <p>Loaded fries with delicious BBQ flavour.</p>
+                </div>
+
+            </div>
+
+            <h3>SIDES</h3>
+
+            <div class="menu-items">
+
+                <div class="menu-card">
+                    <h3>Chicken Nuggets</h3>
+                    <p>Crispy, golden and delicious.</p>
+                </div>
+
+            </div>
+
+            <h3>FRAPPES</h3>
+
+            <div class="menu-items">
+
+                <div class="menu-card">
+                    <h3>Strawberry Frappe</h3>
+                    <p>Sweet, creamy and refreshing.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Chocolate Frappe</h3>
+                    <p>A rich and chocolatey treat.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Vanilla Frappe</h3>
+                    <p>Smooth and creamy vanilla goodness.</p>
+                </div>
+
+            </div>
+
+            <h3>ICED COFFEE</h3>
+
+            <div class="menu-items">
+
+                <div class="menu-card">
+                    <h3>Iced Latte</h3>
+                    <p>Espresso blended with chilled milk.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Iced Americano</h3>
+                    <p>Bold espresso served over ice.</p>
+                </div>
+
+            </div>
+
+            <h3>MOJITOS</h3>
+
+            <div class="menu-items">
+
+                <div class="menu-card">
+                    <h3>Classic Mojito</h3>
+                    <p>A refreshing mint and lime drink.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Strawberry Mojito</h3>
+                    <p>Strawberry, mint and refreshing citrus.</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>Blue Lagoon Mojito</h3>
+                    <p>A refreshing blue citrus drink.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about">
+            <h2>About La Bouchée</h2>
+            <p>Good food, beautiful moments.</p>
+            <p>We serve delicious food and refreshing drinks, made to brighten your day.</p>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h3>LA BOUCHÉE BISTRO</h3>
+        <p>Ilorin, Kwara State, Nigeria</p>
+        <p>Good food. Good mood.</p>
+        <p>&copy; 2026 La Bouchée Bistro Nigeria.</p>
+    </footer>
 
 </body>
 </html>

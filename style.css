@@ -177,4 +177,9 @@ font-size: 13px;
     margin: 0 !important;
     font-size: 12px;
     line-height: 1.5;
+}.price {
+    color: #b58a45;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
 }

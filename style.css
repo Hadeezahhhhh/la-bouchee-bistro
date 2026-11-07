@@ -418,4 +418,34 @@ font-size: 13px;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
+}.payment-section .payment-option {
+    display: grid !important;
+    grid-template-columns: 24px minmax(0, 1fr) auto !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.payment-section .payment-option input[type="radio"] {
+    width: 22px !important;
+    height: 22px !important;
+    margin: 0 !important;
+    flex: none !important;
+}
+
+.payment-section .payment-option label {
+    display: block !important;
+    margin: 0 !important;
+    text-align: left !important;
+    white-space: normal !important;
+    min-width: 0 !important;
+}
+
+.payment-section .payment-option span {
+    position: static !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
 }

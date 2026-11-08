@@ -116,4 +116,25 @@ summary += "\n\nPlease transfer the exact amount and await payment confirmation.
     
 
     alert(summary);
+}); // Switch between Sign Up and Log In
+
+const signupSection = document.getElementById("signup");
+const loginSection = document.getElementById("login");
+
+loginSection.style.display = "none";
+
+document.querySelectorAll('a[href="#login"]').forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        signupSection.style.display = "none";
+        loginSection.style.display = "block";
+    });
+});
+
+document.querySelectorAll('a[href="#signup"]').forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        loginSection.style.display = "none";
+        signupSection.style.display = "block";
+    });
 });
